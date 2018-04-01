@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyWeChat</string>
+
+    <string name="first_tab_name">Chats</string>
+    <string name="second_tab_name">Contacts</string>
+    <string name="third_tab_name">Discover</string>
+    <string name="fourth_tab_name">Me</string>
+</resources>
