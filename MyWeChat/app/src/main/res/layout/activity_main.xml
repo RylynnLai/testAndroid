@@ -6,83 +6,92 @@
     android:layout_height="match_parent"
     tools:context="com.example.rylynn.mywechat.MainActivity" >
 
-
-    <LinearLayout
+    <Button
+        android:id="@+id/tabbar_btn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="展示TabBar"
+        android:background="#f1d605"/>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/firstBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/first_tab_name"
-                    android:drawableTop="@mipmap/ic_action_account_balance"
-                    android:textAllCaps="false"
-                    android:background="@color/colorClear"
-                    android:layout_marginTop="5dp"
-                    />
-                <Button
-                    android:id="@+id/secondBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/second_tab_name"
-                    android:drawableTop="@mipmap/ic_action_account_balance_wallet"
-                    android:textAllCaps="false"
-                    android:background="@color/colorClear"
-                    android:layout_marginTop="5dp"
-                    />
-                <Button
-                    android:id="@+id/thirdBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/third_tab_name"
-                    android:drawableTop="@mipmap/ic_action_accessibility"
-                    android:textAllCaps="false"
-                    android:background="@color/colorClear"
-                    android:layout_marginTop="5dp"
-                    />
-                <Button
-                    android:id="@+id/fourthBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/fourth_tab_name"
-                    android:drawableTop="@mipmap/ic_action_account_circle"
-                    android:textAllCaps="false"
-                    android:background="@color/colorClear"
-                    android:layout_marginTop="5dp"
-                    />
-
-            </LinearLayout>>
-        </LinearLayout>>
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"/>-->
 
 
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
 
-    </LinearLayout>>
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/colorPrimaryDark" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/firstBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/first_tab_name"-->
+                    <!--android:drawableTop="@mipmap/ic_action_account_balance"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:background="@color/colorClear"-->
+                    <!--android:textColor="@drawable/text_color_selector"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/secondBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/second_tab_name"-->
+                    <!--android:drawableTop="@mipmap/ic_action_account_balance_wallet"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:background="@color/colorClear"-->
+                    <!--android:textColor="@drawable/text_color_selector"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/thirdBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/third_tab_name"-->
+                    <!--android:drawableTop="@mipmap/ic_action_accessibility"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:background="@color/colorClear"-->
+                    <!--android:textColor="@drawable/text_color_selector"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/fourthBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/fourth_tab_name"-->
+                    <!--android:drawableTop="@mipmap/ic_action_account_circle"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:background="@color/colorClear"-->
+                    <!--android:textColor="@drawable/text_color_selector"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>>-->
+        <!--</LinearLayout>>-->
+
+
+
+    <!--</LinearLayout>-->
 
 </android.support.constraint.ConstraintLayout>

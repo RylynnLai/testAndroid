@@ -1,54 +1,36 @@
 package com.example.rylynn.mywechat;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button firstBtn;
-    Button secondBtn;
-    Button thirdBtn;
-    Button fourthBtn;
+    Button tabBarBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        firstBtn = this.findViewById(R.id.firstBtn);
-        secondBtn = this.findViewById(R.id.secondBtn);
-        thirdBtn = this.findViewById(R.id.thirdBtn);
-        fourthBtn = this.findViewById(R.id.fourthBtn);
+        initView();
+        selectorMethod();
+    }
 
-        firstBtn.setOnClickListener(new View.OnClickListener() {
+    private void initView() {
+        tabBarBtn = findViewById(R.id.tabbar_btn);
+    }
+
+    private void selectorMethod() {
+        tabBarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("firth btn");
+                Intent intent = new Intent(MainActivity.this, TabBarActivity.class);
+                startActivity(intent);
             }
         });
-
-        secondBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("second btn");
-            }
-        });
-
-        thirdBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("third btn");
-            }
-        });
-
-        fourthBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("fourth btn");
-            }
-        });
-
     }
 }
