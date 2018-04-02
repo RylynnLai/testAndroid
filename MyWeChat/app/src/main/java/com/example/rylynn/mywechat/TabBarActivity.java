@@ -1,5 +1,6 @@
 package com.example.rylynn.mywechat;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.app.FragmentContainer;
 import android.support.v4.app.FragmentActivity;
@@ -38,6 +39,9 @@ public class TabBarActivity extends FragmentActivity implements View.OnClickList
         setContentView(R.layout.activity_tab_bar);
 
         initView();
+
+        Intent intent = getIntent();
+        this.setTitle(intent.getStringExtra("msg"));
 
         fragmentManager = getSupportFragmentManager();          // 开启一个事物
 
