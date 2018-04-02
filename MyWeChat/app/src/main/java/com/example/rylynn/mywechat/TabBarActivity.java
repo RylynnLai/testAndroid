@@ -85,8 +85,7 @@ public class TabBarActivity extends FragmentActivity implements View.OnClickList
 
     private void setItemSelected(int index) {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        int[] list = {0, 1, 2, 3};
-        for (int i : list) {
+        for (int i = 0; i < 4; i ++) {
             Fragment frag = frags[i];
             if (i == index) {
                 itemBtns[i].setSelected(true);
